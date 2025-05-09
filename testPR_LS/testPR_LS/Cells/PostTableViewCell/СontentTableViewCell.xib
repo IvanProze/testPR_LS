@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="СontentTableViewCell" customModule="testPR_LS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9p-4o-inP">
+                        <rect key="frame" x="16.000000000000004" y="15.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-Re-Gok">
+                        <rect key="frame" x="16.000000000000004" y="44.333333333333336" width="41.333333333333343" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d9-0X-Gmc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="touchAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fi9-Bt-l6l"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I60-tP-49N">
+                        <rect key="frame" x="16" y="99" width="304" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="H3e-jB-aMv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7d9-0X-Gmc" secondAttribute="trailing" id="4fP-qs-kl0"/>
+                    <constraint firstItem="GFT-Re-Gok" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="E9h-pv-8Fa"/>
+                    <constraint firstItem="GFT-Re-Gok" firstAttribute="top" secondItem="l9p-4o-inP" secondAttribute="bottom" constant="8" id="HBC-TW-t16"/>
+                    <constraint firstAttribute="bottom" secondItem="7d9-0X-Gmc" secondAttribute="bottom" id="HGz-Na-B8J"/>
+                    <constraint firstAttribute="bottom" secondItem="I60-tP-49N" secondAttribute="bottom" constant="1" id="I1B-9M-RSY"/>
+                    <constraint firstItem="7d9-0X-Gmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IQ4-aD-Gav"/>
+                    <constraint firstItem="l9p-4o-inP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Jki-TS-8Ux"/>
+                    <constraint firstAttribute="trailing" secondItem="I60-tP-49N" secondAttribute="trailing" id="K2Y-dd-NsM"/>
+                    <constraint firstItem="l9p-4o-inP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Uay-iI-MaX"/>
+                    <constraint firstItem="I60-tP-49N" firstAttribute="leading" secondItem="l9p-4o-inP" secondAttribute="leading" id="fWA-iH-Nc9"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GFT-Re-Gok" secondAttribute="trailing" constant="16" id="lOx-sc-A3D"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GFT-Re-Gok" secondAttribute="bottom" constant="16" id="mbX-jg-jvS"/>
+                    <constraint firstItem="7d9-0X-Gmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qA0-TC-rTK"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l9p-4o-inP" secondAttribute="trailing" constant="16" id="zYy-6O-BTr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundView" destination="H2p-sc-9uM" id="Wc9-7v-XXN"/>
+                <outlet property="borderView" destination="I60-tP-49N" id="9aI-9g-Adm"/>
+                <outlet property="mainTextLabel" destination="GFT-Re-Gok" id="Yam-wj-kTB"/>
+                <outlet property="titleLabel" destination="l9p-4o-inP" id="z74-YG-LUZ"/>
+            </connections>
+            <point key="canvasLocation" x="36.641221374045799" y="39.7887323943662"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
